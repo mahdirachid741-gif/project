@@ -1,0 +1,50 @@
+.shop-container {
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .shop-container h2 {
+    text-align: center;
+  }
+}
+/* Sidebar container */
+.sidebar-box {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Genre Item (clickable!) */
+.genre-item {
+  cursor: pointer;
+  padding: 6px 0;
+  font-size: 16px;
+  color: #444;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.genre-item:hover {
+  color: #5c2cf2;
+  transform: translateX(4px);
+}
+
+/* Active selected genre */
+.active-genre {
+  font-weight: bold;
+  color: #5c2cf2;
+}
+
+/* Book grid spacing */
+.shop-layout {
+  padding-bottom: 50px;
+}

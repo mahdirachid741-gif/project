@@ -1,0 +1,118 @@
+/* Footer.css — centered + smaller font + vertical separators */
+
+:root {
+  --footer-bg: #4b1ea6;
+  --footer-border: rgba(255, 255, 255, 0.15);
+  --footer-border-vertical: rgba(255, 255, 255, 0.18);
+  --footer-text: #ffffff;
+  --footer-muted: rgba(255, 255, 255, 0.85);
+  --footer-width: 1100px;
+}
+
+/* MAIN FOOTER WRAPPER */
+.footer-container {
+  width: 100%;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 50px 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CENTERED CONTENT */
+.footer-content {
+  width: 100%;
+  max-width: var(--footer-width);
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 40px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--footer-border);
+}
+
+/* FOOTER COLUMN */
+.footer-section {
+  min-width: 160px;
+  padding-right: 30px;
+  position: relative;
+}
+
+/* VERTICAL SEPARATOR LINE */
+.footer-section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--footer-border-vertical);
+  opacity: 0.6;
+}
+
+/* TITLES */
+.footer-section h2,
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* DESCRIPTION TEXT */
+.footer-section p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: var(--footer-muted);
+}
+
+/* LISTS */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--footer-muted);
+}
+
+.footer-section ul li:hover {
+  opacity: 0.8;
+}
+
+/* SOCIAL ICONS */
+.footer-socials i {
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-socials i:hover {
+  opacity: 0.8;
+}
+
+/* BOTTOM COPYRIGHT */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--footer-muted);
+  text-align: center;
+}
+.footer-container {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  background-color: #4b1ea6;
+}
+.footer-section ul li a {
+  color: var(--footer-muted);
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  opacity: 0.8;
+}

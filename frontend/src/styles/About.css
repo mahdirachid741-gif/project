@@ -1,0 +1,66 @@
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+.about-section,
+.team-section {
+  background-color: #f4f1ff; /* light purple background (#f6f3ff style) */
+}
+
+.mission-section {
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.content-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-side img {
+  width: 100%;
+  max-width: 380px;
+}
+
+.text-side {
+  max-width: 600px;
+}
+
+.text-side h2 {
+  color: #5a29e3; /* purple heading */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-side p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+  .content-wrapper,
+  .content-wrapper.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-side img {
+    max-width: 280px;
+  }
+}
+.text-purple {
+  color: #5a29e3;
+}
