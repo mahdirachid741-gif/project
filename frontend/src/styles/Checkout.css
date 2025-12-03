@@ -1,0 +1,157 @@
+.checkout-container {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background-color: #f8f7ff;
+}
+
+.checkout-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.checkout-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cart Summary */
+.checkout-cart {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-cart h3 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.checkout-img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.checkout-info {
+  flex: 1;
+}
+
+.checkout-book-title {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkout-author {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.checkout-controls {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkout-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #5c2cf2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkout-controls span.price {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background-color: #ff4d4f;
+  padding: 0 8px;
+  border-radius: 50%;
+}
+
+/* Total */
+.checkout-total {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Billing & Payment Form */
+.checkout-form {
+  flex: 1 1 350px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-form h3 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.checkout-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-btn {
+  padding: 12px;
+  background-color: #5c2cf2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #4a20d1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-content {
+    flex-direction: column;
+  }
+  .checkout-img {
+    width: 120px;
+    height: 180px;
+  }
+}

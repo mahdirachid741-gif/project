@@ -6,6 +6,20 @@ import BooksImage from "../images/images.png";
 function Home() {
   const navigate = useNavigate();
 
+  // Helper to navigate to shop with a category
+  const goToGenre = (genre) => {
+    navigate(`/shop?category=${genre.toLowerCase()}`);
+  };
+
+  const genres = [
+    "Fantasy",
+    "Romance",
+    "Horror",
+    "Mystery",
+    "Adventure",
+    "Sci-Fi",
+  ];
+
   return (
     <div className="home-container">
       {/* HERO SECTION */}
@@ -34,20 +48,15 @@ function Home() {
 
         <div className="genres-scroll-wrapper">
           <div className="genres-scroll">
-            <div className="genre-big-card">Fantasy</div>
-            <div className="genre-big-card">Romance</div>
-            <div className="genre-big-card">Horror</div>
-            <div className="genre-big-card">Mystery</div>
-            <div className="genre-big-card">Adventure</div>
-            <div className="genre-big-card">Sci-Fi</div>
-
-            {/* Duplicate for infinite scrolling */}
-            <div className="genre-big-card">Fantasy</div>
-            <div className="genre-big-card">Romance</div>
-            <div className="genre-big-card">Horror</div>
-            <div className="genre-big-card">Mystery</div>
-            <div className="genre-big-card">Adventure</div>
-            <div className="genre-big-card">Sci-Fi</div>
+            {genres.concat(genres).map((genre, index) => (
+              <div
+                key={index}
+                className="genre-big-card"
+                onClick={() => goToGenre(genre)}
+              >
+                {genre}
+              </div>
+            ))}
           </div>
         </div>
       </section>
